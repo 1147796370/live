@@ -6,7 +6,6 @@ module.exports = {
 				changeOrigin: true,
 				pathRewrite: {
 					'^/api/user': '/s',
-					// '^/api': '/images/generations'
 				}
 			},
 			'/abc': {
@@ -14,7 +13,6 @@ module.exports = {
 				changeOrigin: true,
 				pathRewrite: {
 					'^/abc/user': '/search',
-					// '^/api': '/images/generations'
 				}
 			},
 			'/blbl': {
@@ -22,7 +20,14 @@ module.exports = {
 				changeOrigin: true,
 				pathRewrite: {
 					'^/blbl/user': '/all',
-					// '^/api': '/images/generations'
+				}
+			},
+			'/open': {
+				target: 'https://api.openai.com/v1',
+				changeOrigin: true,
+				pathRewrite: {
+					'^/open/user': '/chat/completions',
+					'^/api/img': '/images/generations'
 				}
 			},
 		},
