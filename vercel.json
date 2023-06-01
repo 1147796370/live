@@ -9,6 +9,9 @@
     },{
       "src": "/blbl/user",
       "dest": "https://search.bilibili.com/all"
+    },{
+      "src": "/open/user",
+      "dest": "https://api.openai.com/v1/chat/completions"
     }
   ]
 }
